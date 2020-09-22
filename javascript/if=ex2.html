@@ -8,16 +8,15 @@
 <body>
     <input type="text" id="input1"> <br>
     <button onclick="vote()">투표가능?</button>
-    <p id="result">     
-    </p>
+    <p id="result"></p>
     <script>
         function vote() {
-            var age = documnet.getElementById("input1").value;
+            var age = document.getElementById("input1").value;
             age = Number(age);
 
+            document.getElementById('result').innerHTML = "";
             if (age > 18) {
-                documnet.getElementById('result').innerHTML ="";
-                documnet.getElementById 
+                document.getElementById('result').innerHTML = "투표 가능";
             }
         }
     </script>
