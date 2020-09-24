@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="lotto()">제 647회 로또 번호 당첨 예상 숫자</button>
+    <div id="result"></div>     
+    <h2> 축하합니다. 1등에 당첨되셨습니다.</h2>
+
+    <script>
+        function lotto() {
+            var numbers = "";
+         for (var i = 0; i < 6; i++) {
+
+             var randomNumber = Math.floor(Math.random() * 45)+1;
+             numbers += "<div>" + randomNumber + "</div>";
+         }
+
+            document.getElementById('result').innerHTML = numbers;
+        }
+    </script>
+</body>
+</html>
