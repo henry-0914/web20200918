@@ -6,12 +6,19 @@
     <style>
     </style>
     <script>
-        $(document).ready(function() {
+        $(function() {
+            console.log("dom loaded");
+            $("h1").click(function() {
+                $(this).hide();
+            })
         });
     </script>
 </head>
 <body>
-    <script>
-    </script>
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head1">Reiciendis?</h1>
+    <h1 id="head1">Saepe.</h1>
+    <h1 id="head1">Aliquid.</h1>
+    <h1 id="head1">Rerum!</h1>
 </body>
-</html>
+</html> 
