@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick ="console.log('hello')"; id="head1">lorem.</h1>
+    <h1 id="head2">lorem2.</h1>
+    <h1 id="head3">lorem3.</h1>
+    <h1 id="head4">lorem4.</h1>
+    <script>
+        function myFunc() {
+            console.log('my function');
+        }
+        var afunc = function() {
+            console.log("이름없는 함수");
+        }
+        $("#head1").click();
+        $("#head2").click(myFunc);
+        $("#head3").click(afunc);
+        $("#head4").click(function(){
+             console.log("이름없는 함수2");
+        });
+    </script>
+</body>
+</html>
